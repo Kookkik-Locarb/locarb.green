@@ -16,6 +16,7 @@ lo-carb-website/
 │   ├── css/
 │   │   ├── base.css             สไตล์หลัก ใช้ทุกหน้า
 │   │   ├── inner.css            สไตล์เพิ่มสำหรับหน้าย่อย (โหลดหลัง base.css)
+│   │   ├── pages.css            ดีไซน์หน้าย่อยชุดใหม่ (ตามภาษาดีไซน์หน้าแรก)
 │   │   └── ds-overrides.css     ปรับตาม Design System ล่าสุด
 │   ├── js/                      สคริปต์ (site.js ใช้ทุกหน้า, home-*.js เฉพาะหน้าแรก, contact-form.js)
 │   └── assets/
@@ -78,6 +79,9 @@ npm run build            # build เว็บ + Storybook รวมไว้ใ�
 
 ## Changelog (Nov 2026)
 
+- หน้าย่อยทั้ง 18 หน้า ทำใหม่ตามดีไซน์หน้าแรก — เนื้อหาและโครงสร้างจาก repo Locarb2027 (หน้าแรกไม่ถูกแก้)
+- Footer ใหม่: พื้นสีครีมเท่านั้น โลโก้ไม่วางบนพื้นดำ อีเมลติดต่อขนาดใหญ่ + wordmark LO-CARB
+
 - ปุ่มสีเขียว: ตัวหนังสือและไอคอนเป็นสีขาว
 - What We Do: คำบริการเป็นตัวหนังสือสีเขียว ไม่ใช้ pill
 - Our Clients: hover โลโก้ลูกค้า — โลโก้เป็นสีและเลื่อนขึ้น ชื่อองค์กรแสดงด้านล่างโดยไม่บังโลโก้
@@ -88,3 +92,5 @@ npm run build            # build เว็บ + Storybook รวมไว้ใ�
 
 Termina และ Anakotmai เป็นฟอนต์มีลิขสิทธิ์ — ตรวจสอบสิทธิ์ webfont ก่อน push ขึ้น repository สาธารณะ (แนะนำตั้ง repo เป็น private)
 `assets/fonts/fonts-extended.css` มีน้ำหนักเพิ่มเติม (Anakotmai Light, STIX Regular/Medium/Bold/Italic) ที่ยังไม่ได้ใช้บนเว็บ
+
+- Nov 2026: Footer v4: cream bento layout with a green LO-CARB wordmark that reveals letter by letter (`.ft4`); the logo never sits on black. Home IFRS: removed the large "1st" and the heading now uses staggered typography (`.if-st`). New `js/motion-extra.js`.
