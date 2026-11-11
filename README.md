@@ -33,6 +33,7 @@ lo-carb-website/
 │       └── storybook.css        สไตล์สำหรับหน้า Storybook เท่านั้น
 ├── .storybook/                  ตั้งค่า Storybook (toolbar: Surface / Lang / Viewport)
 ├── .github/workflows/deploy.yml Deploy เว็บ + Storybook ขึ้น GitHub Pages อัตโนมัติ
+├── vercel.json                  ตั้งค่า Deploy บน Vercel (เว็บ + Storybook)
 └── package.json
 ```
 
@@ -58,7 +59,8 @@ npm run build-storybook  # build Storybook เป็นเว็บนิ่ง�
 
 - **GitHub Pages (อัตโนมัติ):** push ขึ้น `main` แล้วตั้ง Settings → Pages → Source = *GitHub Actions* → เว็บอยู่ที่ `/` และ Storybook ที่ `/storybook/`
 - **Chromatic (แบบในตัวอย่าง Grommet):** `npx chromatic --project-token=<token>` (สมัครฟรีที่ chromatic.com)
-- **Vercel / Netlify:** Build command `npm run build-storybook`, Output `storybook-static`
+- **Vercel:** ตั้งค่าไว้แล้วใน `vercel.json` — import repo แล้วกด Deploy ได้เลย (เว็บอยู่ที่ `/` และ Storybook ที่ `/storybook/`) ไม่ต้องตั้ง Framework / Build command เอง
+- **Netlify:** Build command `npm run build-storybook`, Publish directory `storybook-static`
 
 ## Deploy เว็บอย่างเดียว / Website only
 
