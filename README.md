@@ -45,7 +45,7 @@ lo-carb-website/
 npm install
 npm run storybook        # เปิด Storybook ที่ http://localhost:6006
 npm run website          # เปิดเว็บที่ http://localhost:3000
-npm run build-storybook  # build Storybook เป็นเว็บนิ่งใน storybook-static/
+npm run build            # build เว็บ + Storybook รวมไว้ใน dist/ (ใช้ตอน deploy)
 ```
 
 ## Storybook

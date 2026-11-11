@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "npm install",
-  "buildCommand": "npm run build-storybook && rm -rf _site && mkdir -p _site && cp -r website/. _site/ && cp -r storybook-static _site/storybook",
-  "outputDirectory": "_site"
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }

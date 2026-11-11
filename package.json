@@ -4,6 +4,7 @@
   "private": true,
   "description": "LO-CARB website (static HTML) + design tokens + Storybook component library",
   "scripts": {
+    "build": "npm run build-storybook && node scripts/assemble.mjs",
     "storybook": "storybook dev -p 6006 -c storybook-config",
     "build-storybook": "storybook build -c storybook-config -o storybook-static && node scripts/copy-home.mjs",
     "website": "npx --yes serve website -l 3000"
