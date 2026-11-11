@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+# LO-CARB Design System
+
+Component library for **locarb.green**. Every story uses the same CSS as the website
+(`website/css/*`) plus the design tokens exported from Figma (`design-tokens/tokens.css`).
+
+## Toolbar
+
+| Control | What it does |
+|---|---|
+| **Surface** | Eggwhite / Black / Green — the same as `.on-k` / `.on-g` (or `data-surface`) on the site |
+| **Lang** | ไทย / English — sets `html[data-lang]`, exactly like the site's language switcher |
+| **Viewport** (📱 icon) | Desktop 1440 · Tablet 768 · Mobile 375 |
+
+## Sections
+
+- **Foundations** — colors, typography, spacing (read live from the tokens)
+- **Controls / Input / Navigation / Content / Feedback / Sections** — components, with Controls in the panel below
+- **Pages** — the real website pages
+- Components marked **ADDED** are in the design system but not yet on the website; their CSS is in `stories/styles/added-components.css`
+
+## Rules
+
+- Primary = Green `#0EA552` — label and icon on green buttons are **white**
+- Green text on Eggwhite = `#00A158` (`--green-text`)
+- Square by default (radius 0) — pills / circles only for buttons, chips and icon buttons
+- Feedback colours (error / warning) are accents only, never decoration
