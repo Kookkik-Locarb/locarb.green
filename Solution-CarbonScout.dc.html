@@ -3371,6 +3371,56 @@ body.ip .band-cta .btn.b-k .ar{background:var(--k);color:var(--g)}
 body.ip .band-cta .btn.b-c:hover{background:var(--g)}
 @media (max-width:1100px){body.ip .head{grid-template-columns:1fr}body.ip .head > p{justify-self:start !important}body.ip .prose-l{position:static}}
 @media (max-width:680px){body.ip .ph-hero{min-height:560px;padding-top:120px}}
+
+/* ===== Footer (Nov 2026): international corporate layout — Eggwhite only, the logo never sits on black ===== */
+.fti{background:var(--c);color:var(--k);box-shadow:inset 0 1px 0 var(--k-l);padding-top:clamp(48px,5vw,80px)}
+.fti a{color:inherit;text-decoration:none}
+.fti h4{margin:0 0 18px;font-family:var(--f-head);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#00A158}
+.fti ul,.fti dl{list-style:none;margin:0;padding:0}
+.fti-head{display:flex;align-items:center;justify-content:space-between;gap:24px 40px;flex-wrap:wrap;padding-bottom:clamp(32px,3vw,48px);box-shadow:inset 0 -1px 0 var(--k-l)}
+.fti-head .ft-logo{display:block;height:52px;width:auto;filter:none !important}
+.fti-cta{display:flex;align-items:center;gap:20px 28px;flex-wrap:wrap}
+.fti-cta p{margin:0;font-family:var(--f-head);font-weight:700;font-size:clamp(15px,1.25vw,18px);line-height:1.4;letter-spacing:-.01em;max-width:34ch}
+.fti-main{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr) minmax(0,3fr);gap:clamp(32px,4vw,64px);padding:clamp(40px,4vw,64px) 0}
+.fti-desc{margin:0 0 32px;font-size:14px;line-height:1.75;color:var(--k-m);max-width:40ch}
+.fti-addr{font-style:normal}
+.fti-addr p{margin:0;font-size:14px;line-height:1.7}
+.fti-map{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-family:var(--f-head);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#00A158 !important}
+.fti-map svg{width:12px;height:12px;transition:transform .2s}
+.fti-map:hover svg{transform:translate(2px,-2px)}
+.fti-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.fti-col li + li{margin-top:12px}
+.fti-col li a,.fti-contact dd a{font-size:14px;line-height:1.45;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:2px;transition:background-size .3s,color .2s}
+.fti-col li a:hover,.fti-contact dd a:hover{color:#00A158;background-size:100% 1px}
+.fti-contact dl > div + div{margin-top:14px}
+.fti-contact dt{font-size:12px;color:var(--k-m);margin-bottom:2px}
+.fti-contact dd{margin:0;font-weight:700}
+.fti-so{display:flex;gap:8px;margin-top:24px}
+.fti-so a{width:40px;height:40px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--k-l);display:grid;place-items:center;transition:background-color .2s,color .2s,box-shadow .2s}
+.fti-so a:hover{background:var(--g);color:var(--c);box-shadow:none}
+.fti-so svg{width:16px;height:16px}
+.fti-cred{display:flex;align-items:center;gap:12px 32px;flex-wrap:wrap;padding:20px 0;box-shadow:inset 0 1px 0 var(--k-l)}
+.fti-cred-k{font-family:var(--f-head);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--k-m)}
+.fti-cred ul{display:flex;flex-wrap:wrap;gap:10px 28px}
+.fti-cred li{display:flex;align-items:center;gap:10px;font-family:var(--f-head);font-weight:700;font-size:12.5px}
+.fti-cred i{width:22px;height:22px;border-radius:50%;background:var(--g);color:var(--c);display:grid;place-items:center;flex:none}
+.fti-cred i svg{width:11px;height:11px}
+.fti-bot{display:flex;align-items:center;gap:12px 32px;flex-wrap:wrap;padding:20px 0 28px;box-shadow:inset 0 1px 0 var(--k-l);font-size:12.5px;color:var(--k-m)}
+.fti .fti-legal{display:flex;gap:8px 24px;flex-wrap:wrap;margin-right:auto}
+.fti-legal a:hover{color:#00A158}
+.fti-top{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-head);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--k) !important}
+.fti-top i{width:36px;height:36px;border-radius:50%;background:var(--g);color:var(--c);display:grid;place-items:center;transition:transform .2s}
+.fti-top i svg{width:13px;height:13px}
+.fti-top:hover i{transform:translateY(-3px)}
+html[data-lang="th"] .fti h4,html[data-lang="th"] .fti-cred-k{font-size:15px;letter-spacing:.02em}
+html[data-lang="th"] .fti-desc,html[data-lang="th"] .fti-addr p{font-size:16px}
+html[data-lang="th"] .fti-cta p{font-size:clamp(17px,1.4vw,20px)}
+html[data-lang="th"] .fti-col li a{font-size:16.5px}
+html[data-lang="th"] .fti-contact dt{font-size:14.5px}
+html[data-lang="th"] .fti-map,html[data-lang="th"] .fti-top{font-size:14.5px;letter-spacing:0}
+html[data-lang="th"] .fti-cred li,html[data-lang="th"] .fti-bot{font-size:14.5px}
+@media (max-width:1100px){.fti-main{grid-template-columns:1fr 1fr}.fti-nav{grid-column:1 / -1;order:-1}}
+@media (max-width:680px){.fti-head{flex-direction:column;align-items:flex-start}.fti-main{grid-template-columns:1fr}.fti-nav{grid-template-columns:1fr 1fr;gap:32px 20px}.fti-nav .fti-col:first-child{grid-column:span 2}.fti-bot{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body class="ip">
@@ -3449,21 +3499,34 @@ body.ip .band-cta .btn.b-c:hover{background:var(--g)}
     <p class="tg5-t" lang="en"><span class="l1">We put <span class="A">the world</span></span><span class="l2">on a carbon <span class="A">diet</span>.</span></p>
   </div>
 </section>
-<footer class="f6">
+<footer class="fti">
   <div class="wrap">
-    <div class="f6-top">
-      <div class="f6-brand"><img class="ft-logo" src="assets/53d40d1d789dc7330e600d50e9548b69.webp" alt="LO-CARB" width="68" height="46" loading="lazy"><p><span class="th">LO-CARB บริษัทที่ปรึกษาด้านความยั่งยืนในประเทศไทย ช่วยองค์กรลดการปล่อยก๊าซเรือนกระจก ลดความเสี่ยง และเปลี่ยนความยั่งยืนให้เป็นการเติบโตทางธุรกิจ</span><span class="en">LO-CARB is a sustainability consultancy in Thailand helping organizations cut emissions, reduce risk and turn sustainability into growth</span></p></div>
-      <div class="f6-reach">
-        <a class="f6-pill" href="mailto:contact@locarb.green"><span>contact@locarb.green</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg></i></a>
-        <a class="f6-pill" href="tel:+66969966249"><span>096 996 6249</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg></i></a>
-        <div class="f6-so"><a href="#linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9h3.5v11H4zM5.7 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM9.5 9H13v1.6c.5-.9 1.7-1.9 3.6-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-3.5v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V20H9.5z"/></svg></a><a href="#facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.27 4.3c-2.3 0-3.87 1.4-3.87 3.97v2.23H7.8v3h2.6V21z"/></svg></a></div>
+    <div class="fti-head">
+      <a href="Main.dc.html" aria-label="LO-CARB"><img class="ft-logo" src="assets/53d40d1d789dc7330e600d50e9548b69.webp" alt="LO-CARB" width="68" height="46" loading="lazy"></a>
+      <div class="fti-cta"><p><span class="th">พร้อมเริ่มต้นเส้นทางความยั่งยืนขององค์กรคุณหรือยัง</span><span class="en">Ready to start your organisation’s sustainability journey?</span></p><a class="btn b-g" href="Contact.dc.html"><span class="th">ติดต่อทีมที่ปรึกษา</span><span class="en">Contact our consultants</span><span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a></div>
+    </div>
+    <div class="fti-main">
+      <div class="fti-about">
+        <p class="fti-desc"><span class="th">LO-CARB บริษัทที่ปรึกษาด้านความยั่งยืนในประเทศไทย ช่วยองค์กรลดการปล่อยก๊าซเรือนกระจก ลดความเสี่ยง และเปลี่ยนความยั่งยืนให้เป็นการเติบโตทางธุรกิจ</span><span class="en">LO-CARB is a sustainability consultancy in Thailand helping organizations cut emissions, reduce risk and turn sustainability into growth</span></p>
+        <address class="fti-addr">
+          <h4><span class="th">สำนักงาน</span><span class="en">Office</span></h4>
+          <p><span class="th">1/3-7 ชั้นดาดฟ้า ซอยศาลาแดง 1 (Godche)<br>สีลม บางรัก กรุงเทพฯ 10500</span><span class="en">1/3-7 Rooftop, Soi Saladaeng 1 (Godche)<br>Silom, Bang Rak, Bangkok 10500</span></p>
+          <a class="fti-map" href="https://www.google.com/maps/search/?api=1&amp;query=LO-CARB+Rooftop+Soi+Sala+Daeng+1+Silom+Bang+Rak+Bangkok+10500" target="_blank" rel="noopener"><span class="th">ดูแผนที่</span><span class="en">Get directions</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg></a>
+        </address>
+      </div>
+      <nav class="fti-nav" aria-label="Footer"><div class="fti-col"><h4><span class="th">บริการและโซลูชัน</span><span class="en">Solutions</span></h4><ul><li><a href="Solution-IFRS.dc.html"><span class="th">มาตรฐาน IFRS</span><span class="en">IFRS Standards</span></a></li><li><a href="Solution-CarbonCal.dc.html">CarbonCal + Carbon Camp</a></li><li><a href="Solution-ISSB.dc.html"><span class="th">การอบรม ISSB</span><span class="en">ISSB training</span></a></li><li><a href="Solution-CarbonScout.dc.html">Carbon Scout</a></li><li><a href="Solution-Reporting.dc.html"><span class="th">รายงานความยั่งยืนและที่ปรึกษา</span><span class="en">Reporting &amp; consulting</span></a></li></ul></div><div class="fti-col"><h4><span class="th">บริษัท</span><span class="en">Company</span></h4><ul><li><a href="About-Story.dc.html"><span class="th">เรื่องราวของเรา</span><span class="en">Our story</span></a></li><li><a href="About-Certificates.dc.html"><span class="th">ใบรับรอง</span><span class="en">Certificates</span></a></li><li><a href="About-Board.dc.html"><span class="th">คณะกรรมการบริษัท</span><span class="en">Board of directors</span></a></li><li><a href="Contact.dc.html"><span class="th">ร่วมงานกับเรา</span><span class="en">Careers</span></a></li></ul></div><div class="fti-col"><h4><span class="th">บทความ</span><span class="en">Insights</span></h4><ul><li><a href="Blog-Portfolio.dc.html"><span class="th">ผลงาน</span><span class="en">Portfolio</span></a></li><li><a href="Blog-Articles.dc.html"><span class="th">บทความ</span><span class="en">Articles</span></a></li><li><a href="Blog-News.dc.html"><span class="th">ข่าวและกิจกรรม</span><span class="en">News &amp; events</span></a></li><li><a href="Blog.dc.html"><span class="th">ภาพรวมบทความ</span><span class="en">Blog overview</span></a></li></ul></div></nav>
+      <div class="fti-col fti-contact">
+        <h4><span class="th">ติดต่อ</span><span class="en">Contact</span></h4>
+        <dl>
+          <div><dt><span class="th">ธุรกิจ</span><span class="en">Business</span></dt><dd><a href="mailto:contact@locarb.green">contact@locarb.green</a></dd></div>
+          <div><dt><span class="th">ร่วมงานกับเรา</span><span class="en">Careers</span></dt><dd><a href="mailto:hr@locarb.green">hr@locarb.green</a></dd></div>
+          <div><dt><span class="th">โทรศัพท์</span><span class="en">Phone</span></dt><dd><a href="tel:+66969966249">096 996 6249</a></dd></div>
+        </dl>
+        <div class="fti-so"><a href="#linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9h3.5v11H4zM5.7 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM9.5 9H13v1.6c.5-.9 1.7-1.9 3.6-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-3.5v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V20H9.5z"/></svg></a><a href="#facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.27 4.3c-2.3 0-3.87 1.4-3.87 3.97v2.23H7.8v3h2.6V21z"/></svg></a></div>
       </div>
     </div>
-    <div class="f6-mid">
-      <div class="f6-col"><h4><span class="th">บริการและโซลูชัน</span><span class="en">Solutions</span></h4><ul><li><a href="Solution-IFRS.dc.html"><span class="th">มาตรฐาน IFRS</span><span class="en">IFRS Standards</span></a></li><li><a href="Solution-CarbonCal.dc.html">CarbonCal + Carbon Camp</a></li><li><a href="Solution-ISSB.dc.html"><span class="th">การอบรม ISSB</span><span class="en">ISSB training</span></a></li><li><a href="Solution-CarbonScout.dc.html">Carbon Scout</a></li><li><a href="Solution-Reporting.dc.html"><span class="th">รายงานความยั่งยืนและที่ปรึกษา</span><span class="en">Reporting &amp; consulting</span></a></li></ul></div><div class="f6-col"><h4><span class="th">บริษัท</span><span class="en">Company</span></h4><ul><li><a href="About-Story.dc.html"><span class="th">เรื่องราวของเรา</span><span class="en">Our story</span></a></li><li><a href="About-Certificates.dc.html"><span class="th">ใบรับรอง</span><span class="en">Certificates</span></a></li><li><a href="About-Board.dc.html"><span class="th">คณะกรรมการบริษัท</span><span class="en">Board of directors</span></a></li><li><a href="Contact.dc.html"><span class="th">ร่วมงานกับเรา</span><span class="en">Careers</span></a></li></ul></div><div class="f6-col"><h4><span class="th">บทความ</span><span class="en">Insights</span></h4><ul><li><a href="Blog-Portfolio.dc.html"><span class="th">ผลงาน</span><span class="en">Portfolio</span></a></li><li><a href="Blog-Articles.dc.html"><span class="th">บทความ</span><span class="en">Articles</span></a></li><li><a href="Blog-News.dc.html"><span class="th">ข่าวและกิจกรรม</span><span class="en">News &amp; events</span></a></li><li><a href="Blog.dc.html"><span class="th">ภาพรวมบทความ</span><span class="en">Blog overview</span></a></li></ul></div>
-      <div class="f6-col"><h4><span class="th">ร่วมงานและสำนักงาน</span><span class="en">Careers &amp; office</span></h4><ul><li><a href="mailto:hr@locarb.green">hr@locarb.green</a></li><li class="f6-addr"><span class="th">1/3-7 ชั้นดาดฟ้า ซอยศาลาแดง 1 (Godche) สีลม บางรัก กรุงเทพฯ 10500</span><span class="en">1/3-7 Rooftop, Soi Saladaeng 1 (Godche), Silom, Bang Rak, Bangkok 10500</span></li></ul><span class="f3-badge"><i lang="en">1<sup>st</sup></i><span class="th">สมาชิก IFRS Sustainability Alliance รายแรกของไทย</span><span class="en">Thailand’s 1st IFRS Sustainability Alliance</span></span></div>
-    </div>
-    <div class="f6-bot"><span class="f6-copy"><span class="th">© 2569 LO-CARB สงวนลิขสิทธิ์</span><span class="en">© 2026 LO-CARB. All rights reserved.</span></span><ul class="f6-legal"><li><a href="#privacy"><span class="th">นโยบายความเป็นส่วนตัว</span><span class="en">Privacy policy</span></a></li><li><a href="#pdpa"><span class="th">ประกาศ PDPA</span><span class="en">PDPA notice</span></a></li><li><a href="#terms"><span class="th">ข้อกำหนดการใช้งาน</span><span class="en">Terms of use</span></a></li></ul><a class="f6-top-btn" href="#top" aria-label="Back to top"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5"/></svg></a></div>
+    <div class="fti-cred"><span class="fti-cred-k"><span class="th">การรับรองและพันธมิตร</span><span class="en">Memberships</span></span><ul><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" aria-hidden="true"><path d="M5 12l4 4L19 7"/></svg></i><span class="th">สมาชิก IFRS Sustainability Alliance รายแรกของไทย</span><span class="en">Thailand’s 1st IFRS Sustainability Alliance</span></li><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" aria-hidden="true"><path d="M5 12l4 4L19 7"/></svg></i>ISSB Training Partner</li></ul></div>
+    <div class="fti-bot"><span class="fti-copy"><span class="th">© 2569 LO-CARB สงวนลิขสิทธิ์</span><span class="en">© 2026 LO-CARB. All rights reserved.</span></span></span><ul class="fti-legal"><li><a href="#privacy"><span class="th">นโยบายความเป็นส่วนตัว</span><span class="en">Privacy policy</span></a></li><li><a href="#pdpa"><span class="th">ประกาศ PDPA</span><span class="en">PDPA notice</span></a></li><li><a href="#terms"><span class="th">ข้อกำหนดการใช้งาน</span><span class="en">Terms of use</span></a></li></ul><a class="fti-top" href="#top"><span class="th">กลับขึ้นด้านบน</span><span class="en">Back to top</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5"/></svg></i></a></div>
   </div>
 </footer>
 
