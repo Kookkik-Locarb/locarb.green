@@ -80,7 +80,7 @@ npm run build            # build เว็บ + Storybook รวมไว้ใ�
 ## Changelog (Nov 2026)
 
 - หน้าย่อยทั้ง 18 หน้า ทำใหม่ตามดีไซน์หน้าแรก — เนื้อหาและโครงสร้างจาก repo Locarb2027 (หน้าแรกไม่ถูกแก้)
-- Footer ใหม่: พื้นสีครีมเท่านั้น โลโก้ไม่วางบนพื้นดำ อีเมลติดต่อขนาดใหญ่ + wordmark LO-CARB
+- Footer v5: รูปแบบมาตรฐานสากล (โลโก้ + CTA, คำอธิบาย/สำนักงานใหญ่, ลิงก์ 3 หมวด, ช่องทางติดต่อ, แถบการรับรอง, แถบลิขสิทธิ์) พื้นสีครีมเท่านั้น โลโก้ไม่วางบนพื้นดำ
 
 - ปุ่มสีเขียว: ตัวหนังสือและไอคอนเป็นสีขาว
 - What We Do: คำบริการเป็นตัวหนังสือสีเขียว ไม่ใช้ pill
@@ -95,3 +95,5 @@ Termina และ Anakotmai เป็นฟอนต์มีลิขสิท�
 
 - Nov 2026: Footer v4: cream bento layout with a green LO-CARB wordmark that reveals letter by letter (`.ft4`); the logo never sits on black. Home IFRS: removed the large "1st" and the heading now uses staggered typography (`.if-st`). New `js/motion-extra.js`.
 - Nov 2026: Updated Storybook to 8.6.19 and Vite to 6.4.6, pinned uuid to ^11.1.1 (npm audit: 0 vulnerabilities), allowed the esbuild install script, and raised the chunk-size warning limit.
+- Nov 2026: Footer v5 (`.ft5`) replaces the bento footer v4 on all 19 pages — international corporate layout: logo + CTA row, about + head office (`<address>`), Solutions / Company / Insights columns, contact list (`<dl>`) + socials, memberships strip, legal bar. Cream only. Storybook snippet updated; the LO-CARB wordmark hook was removed from `js/motion-extra.js`.
+- Nov 2026: Home IFRS heading — all lines the same size, Termina + STIX italic accents like the "We put the world on a carbon diet." tagline.
