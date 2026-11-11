@@ -9,5 +9,7 @@ const config = {
   ],
   docs: { autodocs: 'tag' },
   core: { disableTelemetry: true },
+  // Storybook's own UI bundle is ~900 kB; raise the limit so Vite doesn't warn about it
+  viteFinal: async (cfg) => ({ ...cfg, build: { ...(cfg.build || {}), chunkSizeWarningLimit: 1500 } }),
 };
 export default config;
