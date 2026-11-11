@@ -31,7 +31,7 @@ lo-carb-website/
 │   └── styles/
 │       ├── added-components.css คอมโพเนนต์ที่มีใน Design System แต่ยังไม่มีบนเว็บ (Select, Radio, Toast, Modal, Spinner, Badge, Sidebar)
 │       └── storybook.css        สไตล์สำหรับหน้า Storybook เท่านั้น
-├── .storybook/                  ตั้งค่า Storybook (toolbar: Surface / Lang / Viewport)
+├── storybook-config/            ตั้งค่า Storybook (toolbar: Surface / Lang / Viewport)
 ├── .github/workflows/deploy.yml Deploy เว็บ + Storybook ขึ้น GitHub Pages อัตโนมัติ
 ├── vercel.json                  ตั้งค่า Deploy บน Vercel (เว็บ + Storybook)
 └── package.json
