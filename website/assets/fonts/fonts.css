@@ -1,0 +1,5 @@
+/* Fonts used by the website (loaded on every page) */
+@font-face{font-family:"Termina";src:url("termina-bold.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"STIX Two Text";src:url("stix-two-text-bold-italic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"Anakotmai";src:url("anakotmai-medium.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Anakotmai";src:url("anakotmai-bold.ttf") format("truetype");font-weight:700;font-display:swap}
